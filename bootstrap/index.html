@@ -11,74 +11,171 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<link href="sticky-footer.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body class="container">
-		<header class="page-header">
-			<figure class="">
-				<img src="images/logo.svg" />
-			</figure>
-		</header>
-		<nav class="navbar navbar-inverse">
-			<div class="navbar-header">
-				<button class="navbar-toggle" type="button" name="button"><span class="icon icon-menu-hamburger"></span></button>
-			</div>
-			<ul class="nav navbar-nav">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Canciones</a></li>
-				<li><a href="#">Artistas</a></li>
-				<li><a href="#">Grupos</a></li>
-				<li><a href="#">Discos</a></li>
-				<li><a href="#">Letras</a></li>
-			</ul>
-		</nav>
-		<main class="col-md-8">
-			<section class="container-fluid">
-				<article class="media row">
-					<div class="media-left col-xs-4">
-						<figure class="media-object">
-							<img class="img-responsive img-thumbnail" src="images/portada-molotov.jpg">
-						</figure>
-					</div>
-					<div class="media-body">
-						<h3 class="media-heading">Título artículo</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<div class="input-group input-group-sm">
-							<div class="input-group-addon">
-								<span class="icon icon-user"></span>
-							</div>
-							<textarea name="name" class="form-control" placeholder="Haz un comentario"></textarea>
-						</div>
-					</div>
-				</article>
-			</section>
-				<article>
-					<figure>
-						<img src="">
+	<body>
+		<div class="container">
+			<header class=" page-header clearfix">
+					<figure class="pull-left">
+						<img src="images/logo.svg">
 					</figure>
-					<h3>Título artículo</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<div class="">
-						<img src="" alt="">
-						<textarea name="comentario"></textarea>
-					</div>
-				</article>
-			</section>
-		</main>
-		<aside class="col-md-4 visible-md">
-			<div class="row">
-				<div class="input-group">
-					<input type="text" class="form-control" name="" value="" placeholder="Buscar">
-					<div class="input-group-btn">
-						<button type="button" class="btn btn-default"><span class="icon icon-search
-" aria-hidden="true"></span></button>
-					</div>
+					<ul class="nav nav-pills pull-right">
+						<li><a href="#"><span class="icon icon-th"></span></a></li>
+						<li><a href="#"><span class="icon icon-ok"></span></a></li>
+						<li><a href="#"><span class="icon icon-cd"></span></a></li>
+						<li><a href="#"><span class="icon icon-eur"></span></a></li>
+						<li><a href="#"><span class="icon icon-off"></span></a></li>
+					</ul>
+			</header>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false"><span class="img-responsive icon icon-menu-hamburger"></span></button>
+					<a class="navbar-brand visible-xs">Inicio</a>
 				</div>
+				<div class="navbar-collapse collapse" id="main-navbar-collapse" aria-expanded="false" style="height: 0.8px;">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Inicio</a></li>
+						<li><a href="#">Canciones</a></li>
+						<li><a href="#">Grupos</a></li>
+						<li><a href="#">Generos</a></li>
+						<li><a href="#">Letras</a></li>
+						<li><a href="#">Top 10</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="row">
+				<aside class="col-md-4 col-md-push-8">
+					<div class="input-group buscar">
+						<input class="form-control" type="text" placeholder="Buscar">
+						<span class="input-group-btn"><button class="btn btn-default" type="button"><span class="icon icon-search"></span></button></span>
+					</div>
+					<ul class="hidden-sm hidden-xs nav nav-pills nav-stacked">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Canciones</a></li>
+						<li><a href="#">Grupos</a></li>
+						<li><a href="#">Generos</a></li>
+						<li><a href="#">Letras</a></li>
+						<li><a href="#">Top 10</a></li>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Canciones</a></li>
+						<li><a href="#">Grupos</a></li>
+						<li><a href="#">Generos</a></li>
+						<li><a href="#">Letras</a></li>
+						<li><a href="#">Top 10</a></li>
+					</ul>
+				</aside>
+				<main class="col-md-8 col-md-pull-4">
+					<section class="media-list articulos">
+						<article class="media">
+							<div class="media-left">
+								<figure class="thumbnail">
+									<img class="media-object img-responsive" src="images/portada-molotov.jpg">
+								</figure>
+							</div>
+							<div class="media-right">
+								<a href="#" class="h2 media-heading">Título del artículo</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="input-group input-group-sm col-xs-12">
+								<div class="input-group-addon">
+									<span class="icon icon-user"></span>
+								</div>
+								<textarea class="form-control" placeholder="Deja tu comentario..."></textarea>
+							</div>
+						</article>
+						<article class="media">
+						<div class="media-left text-right">
+							<a href="#" class="h2 media-heading">Título del artículo</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+							<div class="media-right">
+								<figure class="thumbnail">
+									<img class="media-object img-responsive" src="images/portada-molotov.jpg">
+								</figure>
+							</div>
+							<div class="input-group input-group-sm col-xs-12">
+								<div class="input-group-addon">
+									<span class="icon icon-user"></span>
+								</div>
+								<textarea class="form-control" placeholder="Deja tu comentario..."></textarea>
+							</div>
+						</article>
+						<article class="media">
+							<div class="media-left">
+								<figure class="thumbnail">
+									<img class="media-object img-responsive" src="images/portada-molotov.jpg">
+								</figure>
+							</div>
+							<div class="media-right">
+								<a href="#" class="h2 media-heading">Título del artículo</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="input-group input-group-sm col-xs-12">
+								<div class="input-group-addon">
+									<span class="icon icon-user"></span>
+								</div>
+								<textarea class="form-control" placeholder="Deja tu comentario..."></textarea>
+							</div>
+						</article>
+						<article class="media">
+						<div class="media-left text-right">
+							<a href="#" class="h2 media-heading">Título del artículo</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+							<div class="media-right">
+								<figure class="thumbnail">
+									<img class="media-object img-responsive" src="images/portada-molotov.jpg">
+								</figure>
+							</div>
+							<div class="input-group input-group-sm col-xs-12">
+								<div class="input-group-addon">
+									<span class="icon icon-user"></span>
+								</div>
+								<textarea class="form-control" placeholder="Deja tu comentario..."></textarea>
+							</div>
+						</article>
+					</section>
+				</main>
 			</div>
-		</aside>
-		<footer>
-
-		</footer>
+		</div>
+	<footer class="footer">
+		<div class="container">
+			<section class="row">
+				<div class="col-md-6 clearfix wrapper">
+				<article class="col-sm-6">
+					<h2>Contacto</h2>
+					<a href="mailto:info@fotografia.com">info@fotografia.com</a>
+					<p>Calle 5 con 3.<br>Telefono: 123123123.</p>
+				</article>
+				<article class="col-sm-6">
+					<h2>Términos</h2>
+					<p>Conoce nuestros términos y condiciones...</p>
+				</article>
+				</div>
+				<div class="col-md-6 clearfix wrapper">
+				<article class="col-sm-6">
+					<h2>Redes Sociales</h2>
+					<p>Comparte en nuestrar redes</p>
+					<ul class="list-unstyled">
+						<li><a class="icon-facebook" href="http://www.facebook.com">Cofer Industries</a></li>
+						<li><a class="icon-twitter" href="http://www.twitter.com">@CoferIndustries</a></li>
+						<li><a class="icon-instagram" href="http://www.instagram.com">CoferIndustries</a></li>
+					</ul>
+				</article>
+				<article class="col-sm-6">
+					<h2>Derechos</h2>
+					<p>Cofer Industries© Copyright 2017</p>
+				</article>
+				</div>
+			</section>
+			<section class="row">
+				<div class="container-fluid">
+					<span class="label label-primary">Powered by Boostrap.</span>
+				</div>
+			</section>
+		</div>
+	</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
